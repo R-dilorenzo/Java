@@ -11,7 +11,7 @@ public class AziendaOspedaliera {
 	//• aggiungiMedico aggiunge un medico all’azienda. 
 	private void aggiungiMedico(Medico m) {
 		boolean tmp=false;
-		//aereom.add(a);
+		
 		for(Medico listaMed: medLis) {
 			if(m.equals(listaMed)) {
 				tmp=true;
@@ -25,7 +25,7 @@ public class AziendaOspedaliera {
 		}
 	}
 	
-	//NON VA BENE
+	
 	private void medicoMaxVisite() {
 		for(Medico listaMed: medLis) {
 			Collections.max(medLis, Comparator.comparing(s -> s.getCodiceIdentificativo()));
