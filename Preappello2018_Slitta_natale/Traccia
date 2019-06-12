@@ -1,0 +1,35 @@
+Programmazione Object-Oriented
+PreAppello 11/01/2018
+
+1. [10 punti] Durante le feste natalizie le persone possono ricevere regali da Babbo Natale. Un regalo è
+caratterizzato dalla data di consegna, dal peso del pacco e dalla regione del destinatario. I regali per
+bambini hanno associati: il nome e l’età del bambino ed un messaggio, mentre i regali per adulti hanno
+associato il mittente. Implementare un insieme di classi che modellano tali informazioni e includano i
+seguenti metodi:
+a. toString che restituisce per il regalo bambino la string HoHoHo seguita dal testo del
+messaggio, mentre per il regalo adulto restituisce il mittente.
+b. calcolaCosto che restituisce il costo della consegna in base alla regione del destinatario in
+accordo ai seguenti criteri: Nord €10, Centro € 15, Sud € 20.
+
+2. [10 punti] Definire la classe SlittaDiBabboNatale che contiene la lista di regali da spedire. La
+slitta è caratterizzata da un peso massimo trasportabile. Corredare la classe con i metodi:
+a. aggiungiRegalo che aggiunge un regalo alla slitta. Nel caso in cui l’aggiunta del regalo fa
+ottenere un peso maggiore del peso massimo trasportabile viene lanciata un’eccezione
+controllata PesoMaxSuperatoException.
+b. calcolaCosto che restituisce il costo totale dei regali presenti sulla slitta.
+c. spedisci che simula la spedizione dei regali presenti sulla slitta associando ai regali la data di
+consegna secondo i seguenti criteri: Nord data odierna, Centro giorno successivo alla data
+odierna, Sud due giorni dopo la data odierna. Pertanto fare in modo che Babbo Natale consegni i
+regali nel seguente ordine: Nord, Centro, Sud. Il metodo restituisce la stringa ottenuta
+concatenando il risultato dell’invocazione del metodo toString sui regali consegnati (tenendo
+conto dell’ordine di consegna).
+
+3. [10 punti] Implementare una classe starter che:
+a. Crea un oggetto SlittaDiBabboNatale con un peso massimo di 1000Kg. Aggiungere alla
+slitta regali scelti in maniera casuale tra regali adulti (il cui peso massimo è 30kg) e regali
+bambini (il cui peso massimo è 20 kg).
+b. Salvare in un file i nomi dei bambini che devono ricevere il regalo.
+c. Visualizzare:
+1) il costo per consegnare i regali;
+2) la stringa ottenuta dall’operazione di spedizione.
+d. Chiedere all’utente il nome di un bambino ed effettuare la ricerca all’interno del file.

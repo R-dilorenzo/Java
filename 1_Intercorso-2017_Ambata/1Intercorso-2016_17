@@ -1,0 +1,33 @@
+Prima prova intercorso 14/11/2016
+
+
+Implementare un sistema che permetta di simulare giochi d’azzardo acquistabili nelle ricevitorie
+Lottomatica. Le tipologie di gioco da considerare sono: Ambata e Carta Alta. Entrambi i giochi
+ si basano sulla generazione di numeri casuali ed hanno un costo fisso.
+ 
+1. [15 punti] 
+ Definire la classe Ambata che simuli il seguente gioco: il giocatore riceve un
+biglietto con un numero X compreso tra 1 e 45 e vengono poi estratti 10 numeri casuali diversi
+nell’intervallo [1, 45]. Se X è tra gli estratti il giocatore vince 10 volte il costo del 
+biglietto.
+Definire la classe CartaAlta che simuli il seguente gioco: il giocatore riceve un biglietto con
+quattro carte (A, B, C, D) con valori da 1 a 10. Le prime due (A, B) sono quelle del Banco, le
+seconde due (C, D) sono quelle del giocatore. Il giocatore vince se C > A e D > B. La vincita
+corrisponde a 5 volte il costo del biglietto.
+Prevedere per entrambe le classi i metodi: gioca (che simula il gioco), dammiVincita (che
+calcolo il guadagno della vincita), toString.
+
+2. [8 punti]
+ Definire la classe Cliente che modella un giocatore d’azzardo. In particolare, un
+cliente ha un codice fiscale, un saldo, e può acquistare dei biglietti (se il saldo glielo permette) e
+poi giocarli. Prevedere anche il metodo toString.
+Inserire tutte le classi definite ai punti precedenti nel pacchetto gioco.
+
+3. [7 punti] 
+Nel pacchetto testing, implementare una classe starter che esegue le operazioni
+seguenti nell’ordine in cui sono elencate:
+1. istanzia un cliente con un saldo compreso tra 50 e 100 euro,
+2. acquista dieci biglietti a caso tra Ambata e CartaAlta
+3. stampa a video i dati del cliente
+4. gioca tutti i biglietti acquistati
+5. ristampa a video i dati del cliente

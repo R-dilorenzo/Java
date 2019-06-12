@@ -1,0 +1,18 @@
+Punto 1.
+ [15 punti] Implementare il concetto di lavoratore dipendente (classe Dipendente). Un
+lavoratore dipendente ha un nome, un cognome, un indirizzo (oggetto della classe Indirizzo
+allegata) e un numero identificativo. I numeri identificativi dei dipendenti sono numeri interi
+consecutivi maggiori di 0 (al primo assunto viene assegnato il numero identificativo 1, al
+secondo 2, e così via).
+Dotare la classe Dipendente di un’interfaccia pubblica adeguata.
+Sovrascrivere opportunamente i metodi equals, toString e clone nelle classi
+Dipendente e Indirizzo.
+Creare un programma di test che chiede all’utente di inserire da tastiera i dati di 2 dipendenti, se i
+due dipendenti sono uguali lanciare un’eccezione controllata WrongDependentException.
+
+Punto 2.
+ [15 punti] Implementare in Java la finestra seguente:
+Nelle caselle “Operando 1” e “Operando 2” l’utente deve inserire un numero con virgola. Alla
+pressione del pulsante “=” di fianco (dove ora è visualizzato 0) deve comparire il risultato della
+somma dei due valori inseriti se è selezionato il pulsante radio “add”, altrimenti deve comparire
+il risultato della loro moltiplicazione.

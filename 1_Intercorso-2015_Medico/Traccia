@@ -1,0 +1,39 @@
+Programmazione II Prima prova intercorso 13/11/2015   
+
+ Implementare un sistema per gestire le visite dei medici appartenenti ad una azienda ospedaliera.
+ I medici possono essere specialisti o generici. Entrambi possono visitare i pazienti, ma solo gli 
+ specialisti possono effettuare interventi chirurgici. I pazienti sono caratterizzati da codice fiscale, 
+ numero di interventi effettuati, lista delle cure prescrittegli. Ogni medico è caratterizzato da un 
+ codice identificativo, un cognome ed un nome. 
+ 
+ 1. [14 punti] Definire la classe MedicoSpecialista che modella i medici specialisti. Essi sono 
+ caratterizzati da: specializzazione, numero visite effettuate, e lista di pazienti da operare. 
+ Quando uno specialista visita un paziente inserisce il paziente nella lista di pazienti da operare 
+ ed incrementa il numero di visite effettuate. Quando uno specialista opera un paziente controlla 
+ che il paziente sia presente nella sua lista di pazienti da operare, in caso positivo lo elimina 
+ dalla lista ed aggiorna il numero di operazioni effettuate dal paziente. Aggiungere alla classe 
+ gli opportuni metodi.  Definire la classe MedicoGenerico che modella i medici generici. Essi sono 
+ caratterizzati da una lista di pazienti che hanno in cura ed il numero di visite effettuate. Un medico 
+ generico visita un suo paziente prescrivendogli una cura (aggiornare la lista delle cure prescrittegli). 
+ La cura sarà scelta in maniera casuale da una lista di possibili cure (ad es. Antibiotici, Riposo, 
+ Cortisonici, Ricovero, Riabilitazione, Intervento). Aggiungere alla classe gli opportuni metodi.  
+ 
+ 2. [8 punti] La classe AziendaOspedaliera tiene traccia di un insieme di medici. Inoltre, la classe 
+ fornisce i seguenti metodi:
+  • aggiungiMedico aggiunge un medico all’azienda.
+  • effettuaVisita effettua la visita di un paziente da parte di un medico. Il metodo prende come parametro 
+    esplicito l’identificativo del medico ed il riferimento all’oggetto Paziente da visitare. La visita non 
+    deve essere possibile se il medico ha effettuato più di 500 visite.
+  • medicoMaxVisite restituisce il medico dell’azienda che ha effettuato più visite. 
+  Inserire tutte le classi definite ai punti precedenti nel pacchetto asl.  
+  
+ 3. [8 punti] Nel pacchetto testing, implementare una classe collaudo che esegue le operazioni seguenti nell’ordine 
+    in cui sono elencate: 
+    1. istanzia una lista di 10 pazienti  
+    2. istanzia una azienda ospedaliera inserendovi o 5 oggetti MedicoSpecialista e  o 5 oggetti MedicoGenerico, ognuno 
+       con 2 pazienti in cura (presi da quelli istanziati al punto 1), 
+    3. scegliere 50 volte in modo random un medico dell’azienda ospedaliera che effettui la visita di uno dei pazienti 
+       (sempre scelto in modo casuale tra quelli istanziati al punto 1),  
+    4. stampa a video i dati del medico che ha effettuato più visite,
+    5. per ogni medico specialista effettuare gli interventi chirurgici a tutti i pazienti presenti nella sua lista di 
+       pazienti da operare, 

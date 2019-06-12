@@ -1,0 +1,25 @@
+Esercizio 1 (15 punti) – Aeromobile è una classe che descrive un aeromobile, ovvero ogni macchina costruita
+ dall'uomo che si può spostare nell'aria consentendo il trasporto di persone o cose all'interno dell'atmosfera
+  terrestre. Esso è definito dalla data dell’ultima revisione, dalla data del prossimo volo e dal numero di
+   passeggeri prenotati. Ogni Aeromobile è caratterizzato da: • 2 costruttori: o Uno senza parametri che imposta 
+ la data dell’ultima revisione alla data odierna, la data del prossimo volo a null e il numero dei passeggeri a 
+ zero. o Uno che imposta la data dell’ultima revisione (si controlli che la data sia sempre antecedente alla data odierna),
+  la data del prossimo volo (si controlli che la data sia seguente alla data odierna) e il numero dei passeggeri prenotati. 
+  • I metodi set e get per tutte le variabili istanza. • Il metodo isExpiredRevision che restituisce true se la revisione
+   è scaduta, considerando che un aeromobile si revisiona ogni tre anni. • Il metodo effettuaRevisione che imposta ad oggi
+    la data di revisione dell’aeromobile. 
+ Un Aeromobile può essere • Un Aeroplano caratterizzato da: modello (Boeing, Airbus, ecc.), codice volo che lo identifica 
+ (ad es. EK567), rotta (lista di città), e durata volo espressa in ore. • Un Elicottero caratterizzato da: destinazione e
+  da un identificativo (ad es. RR232T). 
+ Definire un’opportuna gerarchia di classi e definire per ciascuna classe i metodi equals e toString. 
+ 
+ 
+Esercizio 2 (7 punti) Scrivere una classe Deposito che consente di 
+ • aggiungere nuovi aeromobili al deposito. Verificare che l’aeromobile non sia già presente. 
+ Nel caso in cui invece sia già presente lanciare una eccezione controllata;
+  • ricercare gli aeromobili disponibili nel deposito a partire da una data fornita come input e che non abbiano
+   la revisione scaduta;  • effettuare la revisione di tutti gli aeromobili presenti nel deposito. 
+ 
+Esercizio 3 (8 punti) - Implementare un’interfaccia grafica che permetta di caricare da un file di oggetti una lista 
+di aeromobili, consenta (tramite un menu a tendina) di selezionare una delle 2 tipologie di aeromobile e, se presenti
+ nel file, visualizza in un’area di testo le informazioni relative agli aeromobili selezionati. 
